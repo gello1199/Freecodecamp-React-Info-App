@@ -1,55 +1,11 @@
-/**
-Challenge: 
-
-Part 1: Create a page of your own using a custom Page component
-
-It should return an ordered list with the reasons why you're
-excited to be learning React :)
-
-Render your list to the page
-
- */
-
 import React from "react";
 import ReactDOM from "react-dom";
 import './style.css'
+import Header from "./components/Header";
+import MainContent from "./components/MainContent";
+import Footer from "./components/Footer";
 
-function Header() {
-    return (
-    <header>
-        <nav className="nav">
-            <img className="nav-logo" src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" alt="react img" />
-            <ul className="nav-items">
-                <li>Pricing</li>
-                <li>About</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
-    </header>
-    )
-}
-
-function Footer() {
-    return (
-        <footer>
-            <small>© 2022 Tsaganeas development. All rights reserved.</small>
-        </footer>
-    )
-}
-
-function MainContent() {
-    return (
-        <div>
-         <h1>Reasons I'm excited to learn React</h1>
-            <ol>
-                <li>Reusability</li>
-                <li>Hirable skills</li>
-            </ol>
-    </div>
-    )
-}
-
-function CustomPage() {
+function App() {
     return (
         <div>
             <Header />
@@ -59,7 +15,7 @@ function CustomPage() {
     )
 }
 
-ReactDOM.render(<CustomPage />, document.getElementById('root'))
+ReactDOM.render(<App />, document.getElementById('root'))
 
 // Quiz
 
