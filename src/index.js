@@ -12,15 +12,49 @@ Render your list to the page
 
 import React from "react";
 import ReactDOM from "react-dom";
+import './style.css'
 
-function CustomPage() {
+function Header() {
+    return (
+    <header>
+        <nav className="nav">
+            <img className="nav-logo" src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" alt="react img" />
+            <ul className="nav-items">
+                <li>Pricing</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    )
+}
+
+function Footer() {
+    return (
+        <footer>
+            <small>© 2022 Tsaganeas development. All rights reserved.</small>
+        </footer>
+    )
+}
+
+function MainContent() {
     return (
         <div>
-            <h1>Reasons I'm excited to learn React</h1>
+         <h1>Reasons I'm excited to learn React</h1>
             <ol>
                 <li>Reusability</li>
                 <li>Hirable skills</li>
             </ol>
+    </div>
+    )
+}
+
+function CustomPage() {
+    return (
+        <div>
+            <Header />
+            <MainContent />
+            <Footer /> 
         </div>
     )
 }
