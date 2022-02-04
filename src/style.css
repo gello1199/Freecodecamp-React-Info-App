@@ -58,3 +58,8 @@ nav {
     line-height: 19px;
     padding-block: 10px;
 }
+
+.main--list > li::marker {
+    color: #61DAFB;
+    font-size: 1.4rem;
+}
