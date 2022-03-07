@@ -40,6 +40,10 @@ nav {
 .main--body {
     padding: 57px 27px;
     color: white;
+    background-image: url("https://cdn.iconscout.com/icon/free/png-256/react-2-458175.png");
+    background-repeat: no-repeat;
+    background-position: right 75%;
+
 }
 
 .main--header {

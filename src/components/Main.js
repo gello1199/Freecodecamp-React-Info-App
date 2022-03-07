@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Main = () => {
+const Main = (props) => {
     return (
-        <main className="main--body">
-            <h1 className="main--header">Fun Facts about React</h1>
+        <main className={props.darkMode ? "dark" : ""}>
+            <h1 className="main--title">Fun Facts about React</h1>
                 <ul className="main--list">
                     <li>Was first release in 2013</li>
                     <li>Was originally created by Jordan Walke</li>
